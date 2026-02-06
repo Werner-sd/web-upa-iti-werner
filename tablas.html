@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tablas - UPA</title>
+    <title>Tablas - UPA ISC & ITI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
     <header class="header">
-        </header>
+        <nav class="nav container">
+            <a href="index.html" class="logo">UPA</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="elementos.html">Elementos</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li>
+                    <a href="index.html#contacto" class="btn btn-contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section class="section container">
             <header class="section-header">
                 <h1>Estructura de Tablas en HTML</h1>
-                <p>Visualización de datos con etiquetas semánticas</p>
+                <p>Visualización de datos con etiquetas semánticas para la carrera de ISC e ITI</p>
             </header>
 
             <div class="card" style="overflow-x: auto;">
@@ -32,19 +53,34 @@
                             <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">1</td>
                             <td style="padding: 12px; border: 1px solid #ddd;">Programación Web</td>
                             <td style="padding: 12px; border: 1px solid #ddd;">Jovani del Boque</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; color: green;">Activo</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; color: green; font-weight: 500;">Activo</td>
                         </tr>
                         <tr>
                             <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">2</td>
                             <td style="padding: 12px; border: 1px solid #ddd;">Bases de Datos</td>
                             <td style="padding: 12px; border: 1px solid #ddd;">Pendiente</td>
-                            <td style="padding: 12px; border: 1px solid #ddd; color: orange;">En curso</td>
+                            <td style="padding: 12px; border: 1px solid #ddd; color: orange; font-weight: 500;">En curso</td>
                         </tr>
                     </tbody>
                 </table>
-                </div>
+            </div>
         </section>
     </main>
 
-    </body>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Universidad Politécnica de Atlacomulco | ISC & ITI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+        if(toggle) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
 </html>
