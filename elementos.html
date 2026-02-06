@@ -2,70 +2,73 @@
     <section class="section container">
         <header class="section-header">
             <h1>Fundamentos de la Ingeniería Web</h1>
-            <p>Exploración de elementos básicos de HTML para el desarrollo de software profesional.</p>
+            <p>Exploración de elementos básicos de HTML para el desarrollo profesional.</p>
         </header>
 
         <div class="card">
             <h2>Estructura de Documentos Digitales</h2>
             <p>
-                En la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>, es vital comprender que el HTML es el esqueleto de cualquier aplicación web. 
-                Usamos <em>etiquetas semánticas</em> para que los motores de búsqueda y las tecnologías de asistencia comprendan nuestra información.
+                En la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>, el HTML es el esqueleto de toda aplicación. 
+                Usamos <em>etiquetas semánticas</em> para mejorar la accesibilidad y el SEO[cite: 18].
             </p>
-            <h3>Jerarquía de Contenido (H3)</h3>
-            <p>Los encabezados ayudan a establecer una jerarquía visual clara para el usuario.</p>
-            <h4>Detalle Técnico (H4)</h4>
-            <h5>Nivel Secundario (H5)</h5>
-            <h6>Nota al Pie (H6)</h6>
+            <h3>Jerarquía de Títulos</h3>
+            <p>Es importante usar correctamente los niveles de encabezados:</p>
+            <h4>Subtítulo H4</h4>
+            <h5>Subtítulo H5</h5>
+            <h6>Subtítulo H6</h6>
         </div>
 
-        <div class="grid">
+        <div class="grid" style="margin-top: 2rem;">
+            
             <article class="card">
-                <h3>Recursos y Aprendizaje</h3>
-                <p>Enlaces de interés para estudiantes:</p>
+                <h3>Recursos Académicos</h3>
+                <p>Enlaces requeridos:</p>
                 <ul>
-                    <li><a href="https://www.upa.edu.mx" target="_blank">Sitio Oficial de la UPA</a></li>
-                    <li><a href="index.html">Volver a la Página Principal</a></li>
+                    <li><a href="https://www.upatlacomulco.edu.mx/" target="_blank">Sitio Oficial de la UPA</a> </li>
+                    <li><a href="index.html">Volver al Inicio</a> </li>
                 </ul>
                 
-                <p><strong>Pasos para el despliegue web:</strong></p>
+                <p><strong>Proceso de Desarrollo:</strong></p>
                 <ol>
-                    <li>Desarrollo local del código.</li>
-                    <li>Carga de archivos a un repositorio en GitHub.</li>
-                    <li>Configuración del dominio en Vercel.</li>
+                    <li>Maquetación en HTML[cite: 20].</li>
+                    <li>Estilos con CSS[cite: 20].</li>
+                    <li>Despliegue en Vercel[cite: 20].</li>
                 </ol>
             </article>
 
             <article class="card">
-                <h3>Contenido Multimedia Embebido</h3>
-                <img src="assets/images/about.jpg" alt="Estudiante de ingeniería trabajando en código" style="width:100%; border-radius:8px; margin-bottom: 15px;">
+                <h3>Contenido Multimedia</h3>
+                <img src="assets/images/about.jpg" alt="Equipo de trabajo UPA" style="width:100%; border-radius:8px; margin-bottom: 15px;"> [cite: 22]
                 
-                <p><em>Video tutorial sobre la estructura de la Web:</em></p>
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/3nYLTiY5H_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><em>¿Cómo funciona la Web?</em></p>
+                <div style="aspect-ratio: 16/9;">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nbXguU70SIs" title="Qué es la web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                </div>
             </article>
         </div>
 
         <div class="card" style="margin-top: 2rem;">
-            <h3>Formulario de Registro de Proyectos (ISC/ITI)</h3>
+            <h3>Formulario de Registro (Práctica ISC)</h3>
             <form class="form">
-                <div style="margin-bottom: 15px;">
-                    <label for="nombre_alumno">Nombre del Estudiante:</label>
-                    <input type="text" id="nombre_alumno" name="nombre" placeholder="Ingresa tu nombre completo" required />
+                <div style="margin-bottom: 1rem;">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre aquí" required /> 
                 </div>
 
-                <div style="margin-bottom: 15px;">
-                    <label for="carrera">Selecciona tu Programa Académico:</label>
-                    <select id="carrera" name="carrera">
+                <div style="margin-bottom: 1rem;">
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera">
                         <option value="isc">Ingeniería en Sistemas Computacionales</option>
                         <option value="iti">Ingeniería en Tecnologías de la Información</option>
-                    </select>
+                    </select> 
                 </div>
 
-                <div style="margin-bottom: 15px;">
-                    <label for="descripcion">Descripción del Proyecto Web:</label>
-                    <textarea id="descripcion" name="mensaje" placeholder="Describe brevemente tu práctica..." rows="5" required></textarea>
+                <div style="margin-bottom: 1rem;">
+                    <label for="comentarios">Descripción de la práctica:</label>
+                    <textarea id="comentarios" rows="4" placeholder="Escribe aquí..."></textarea> 
                 </div>
 
-                <button type="submit" class="btn btn-primary">Enviar Proyecto a Revisión</button>
+                <button type="submit" class="btn btn-primary">Enviar Información</button> 
             </form>
         </div>
     </section>
