@@ -1,75 +1,127 @@
-<main>
-    <section class="section container">
-        <header class="section-header">
-            <h1>Fundamentos de la Ingeniería Web</h1>
-            <p>Exploración de elementos básicos de HTML para el desarrollo profesional.</p>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Elementos - UPA ISC & ITI</title>
+        <meta name="description" content="Práctica de Elementos - Programación Web" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav container">
+                <a href="index.html" class="logo">UPA</a>
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="elementos.html">Elementos</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li>
+                        <a href="index.html#contacto" class="btn btn-contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="card">
-            <h2>Estructura de Documentos Digitales</h2>
-            <p>
-                En la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>, el HTML es el esqueleto de toda aplicación. 
-                Usamos <em>etiquetas semánticas</em> para mejorar la accesibilidad y el SEO.
-            </p>
-            <h3>Jerarquía de Títulos</h3>
-            <p>Es importante usar correctamente los niveles de encabezados para organizar la información:</p>
-            <h4>Subtítulo de nivel 4</h4>
-            <h5>Subtítulo de nivel 5</h5>
-            <h6>Subtítulo de nivel 6 (el más pequeño)</h6>
-        </div>
+        <main>
+            <section class="section container">
+                <header class="section-header">
+                    <h1>Fundamentos de la Ingeniería Web</h1>
+                    <p>Exploración de elementos básicos de HTML conforme a la práctica solicitada.</p>
+                </header>
 
-        <div class="grid" style="margin-top: 2rem;">
-            
-            <article class="card">
-                <h3>Recursos Académicos</h3>
-                <p>Enlaces requeridos para la práctica:</p>
-                <ul>
-                    <li><a href="https://www.upatlacomulco.edu.mx/" target="_blank">Sitio Oficial de la UP Atlacomulco</a></li>
-                    <li><a href="index.html">Volver a la Página Principal</a></li>
-                </ul>
-                
-                <p><strong>Proceso de Desarrollo Web:</strong></p>
-                <ol>
-                    <li>Análisis de requerimientos.</li>
-                    <li>Maquetación de la estructura (HTML).</li>
-                    <li>Aplicación de estilos visuales (CSS).</li>
-                </ol>
-            </article>
-
-            <article class="card">
-                <h3>Contenido Multimedia</h3>
-                <img src="assets/images/about.jpg" alt="Equipo de trabajo UPA" style="width:100%; border-radius:8px; margin-bottom: 15px;">
-                
-                <p><em>Video educativo: ¿Cómo funciona la Web?</em></p>
-                <div style="aspect-ratio: 16/9;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nbXguU70SIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </article>
-        </div>
-
-        <div class="card" style="margin-top: 2rem;">
-            <h3>Formulario de Registro de Proyecto</h3>
-            <form class="form">
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="nombre_estudiante">Nombre del Estudiante:</label>
-                    <input type="text" id="nombre_estudiante" placeholder="Escribe tu nombre completo" required />
+                <div class="card">
+                    <h2>Estructura de Documentos Digitales</h2>
+                    <p>
+                        En la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>, el HTML es esencial. 
+                        Usamos <em>etiquetas semánticas</em> para que la información sea clara y funcional[cite: 17, 18].
+                    </p>
+                    <h3>Niveles de Encabezados</h3>
+                    <p>Demostración de jerarquía de texto:</p>
+                    <h4>Encabezado de nivel 4</h4>
+                    <h5>Encabezado de nivel 5</h5>
+                    <h6>Encabezado de nivel 6</h6>
                 </div>
 
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="carrera_alumno">Selecciona tu carrera:</label>
-                    <select id="carrera_alumno">
-                        <option value="isc">Ingeniería en Sistemas Computacionales</option>
-                        <option value="iti">Ingeniería en Tecnologías de la Información</option>
-                    </select>
+                <div class="grid" style="margin-top: 2rem;">
+                    <article class="card">
+                        <h3>Vínculos y Listas</h3>
+                        <p>Recursos académicos[cite: 19, 20]:</p>
+                        <ul>
+                            <li><a href="https://www.upatlacomulco.edu.mx/" target="_blank">UP Atlacomulco (Externo)</a></li>
+                            <li><a href="index.html">Volver al Inicio (Interno)</a></li>
+                        </ul>
+                        <p><strong>Pasos de la práctica:</strong></p>
+                        <ol>
+                            <li>Modificar la navegación.</li>
+                            <li>Crear página de elementos.</li>
+                            <li>Desplegar en Vercel.</li>
+                        </ol>
+                    </article>
+
+                    <article class="card">
+                        <h3>Contenido Multimedia</h3>
+                        <img src="assets/images/web1.png" alt="Estudiante de ingeniería" style="width:100%; border-radius:8px; margin-bottom: 15px;">
+                        
+                        <p><em>Video: ¿Cómo funciona la Web? </em></p>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                            <iframe 
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/nbXguU70SIs" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </article>
                 </div>
 
-                <div style="margin-bottom: 1.5rem;">
-                    <label for="comentarios_practica">Breve descripción de la práctica:</label>
-                    <textarea id="comentarios_practica" rows="4" placeholder="Describe lo que aprendiste en esta práctica..."></textarea>
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>Formulario de Registro de Proyecto</h3>
+                    <form class="form">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required />
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="carrera">Carrera:</label>
+                            <select id="carrera">
+                                <option value="isc">Ingeniería en Sistemas Computacionales</option>
+                                <option value="iti">Ingeniería en Tecnologías de la Información</option>
+                            </select>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label for="msj">Descripción:</label>
+                            <textarea id="msj" rows="4" placeholder="Escribe algo sobre la práctica..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrar Elementos</button>
+                    </form>
                 </div>
+            </section>
+        </main>
 
-                <button type="submit" class="btn btn-primary">Enviar Información</button>
-            </form>
-        </div>
-    </section>
-</main>
+        <footer class="footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Universidad Politécnica de Atlacomulco | ISC & ITI. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <script>
+            const toggle = document.querySelector('.nav-toggle');
+            const menu = document.querySelector('.nav-menu');
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
