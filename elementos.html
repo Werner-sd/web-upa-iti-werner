@@ -43,10 +43,10 @@
                     <h2>Estructura de Documentos Digitales</h2>
                     <p>
                         En la carrera de <strong>Ingeniería en Sistemas Computacionales</strong>, el HTML es esencial. 
-                        Usamos <em>etiquetas semánticas</em> para que la información sea clara y funcional.
+                        Usamos <em>etiquetas semánticas</em> para que la información sea clara y funcional para los usuarios y buscadores.
                     </p>
                     <h3>Niveles de Encabezados</h3>
-                    <p>Demostración de jerarquía de texto:</p>
+                    <p>Demostración de jerarquía de texto requerida por la práctica:</p>
                     <h4>Encabezado de nivel 4</h4>
                     <h5>Encabezado de nivel 5</h5>
                     <h6>Encabezado de nivel 6</h6>
@@ -57,29 +57,29 @@
                         <h3>Vínculos y Listas</h3>
                         <p>Recursos académicos:</p>
                         <ul>
-                            <li><a href="https://www.upatlacomulco.edu.mx/" target="_blank">UP Atlacomulco (Externo)</a></li>
-                            <li><a href="index.html">Volver al Inicio (Interno)</a></li>
+                            <li><a href="https://www.upatlacomulco.edu.mx/" target="_blank">UP Atlacomulco (Enlace Externo)</a></li>
+                            <li><a href="index.html">Volver al Inicio (Enlace Interno)</a></li>
                         </ul>
                         <p><strong>Pasos de la práctica:</strong></p>
                         <ol>
-                            <li>Modificar la navegación.</li>
-                            <li>Crear página de elementos.</li>
-                            <li>Desplegar en Vercel.</li>
+                            <li>Modificar la navegación principal.</li>
+                            <li>Crear página de elementos y tablas.</li>
+                            <li>Sincronizar GitHub con Vercel.</li>
                         </ol>
                     </article>
 
                     <article class="card">
                         <h3>Contenido Multimedia</h3>
-                        <img src="assets/images/web1.png" alt="Estudiante de ingeniería" style="width:100%; border-radius:8px; margin-bottom: 15px;">
+                        <img src="assets/images/web1.png" alt="Estudiante de ingeniería trabajando" style="width:100%; border-radius:8px; margin-bottom: 15px;">
                         
-                        <p><em>Video: ¿Cómo funciona la Web? </em></p>
-                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                        <p><em>Video Tutorial: ¿Cómo funciona la Web?</em></p>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; background-color: #000;">
                             <iframe 
                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                                src="https://www.youtube.com/watch?v=STNnG5K3jdM" 
+                                src="https://www.youtube.com/embed/S_I_ZREuXGk" 
                                 title="YouTube video player" 
                                 frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -90,19 +90,19 @@
                     <h3>Formulario de Registro de Proyecto</h3>
                     <form class="form">
                         <div style="margin-bottom: 1rem;">
-                            <label for="nombre">Nombre Completo:</label>
-                            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required />
+                            <label for="nombre">Nombre Completo del Estudiante:</label>
+                            <input type="text" id="nombre" placeholder="Escribe tu nombre aquí" required />
                         </div>
                         <div style="margin-bottom: 1rem;">
-                            <label for="carrera">Carrera:</label>
+                            <label for="carrera">Selecciona tu Carrera:</label>
                             <select id="carrera">
                                 <option value="isc">Ingeniería en Sistemas Computacionales</option>
                                 <option value="iti">Ingeniería en Tecnologías de la Información</option>
                             </select>
                         </div>
                         <div style="margin-bottom: 1rem;">
-                            <label for="msj">Descripción:</label>
-                            <textarea id="msj" rows="4" placeholder="Escribe algo sobre la práctica..." required></textarea>
+                            <label for="msj">Descripción de lo aprendido:</label>
+                            <textarea id="msj" rows="4" placeholder="Describe brevemente tu experiencia con HTML y CSS..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Registrar Elementos</button>
                     </form>
@@ -117,11 +117,14 @@
         </footer>
 
         <script>
+            // Script para el menú móvil
             const toggle = document.querySelector('.nav-toggle');
             const menu = document.querySelector('.nav-menu');
-            toggle.addEventListener('click', () => {
-                menu.classList.toggle('active');
-            });
+            if(toggle) {
+                toggle.addEventListener('click', () => {
+                    menu.classList.toggle('active');
+                });
+            }
         </script>
     </body>
 </html>
